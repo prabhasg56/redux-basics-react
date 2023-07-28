@@ -42,10 +42,10 @@ import  {counterAction} from "../store/counter";
 
 
 const Counter = () => {
-  const counter = useSelector((state) => state.counter.value);
+  const counter = useSelector((state) => state.counter.value); //getting initial and updated state
   const show = useSelector((state) => state.counter.showCounter);
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // this is for action dispatch, means updating the state
 
   const incrementHandler = () => {
     dispatch(counterAction.increment());
